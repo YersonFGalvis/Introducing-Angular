@@ -18,7 +18,7 @@ export class HermanoComponent implements OnInit {
   private _servicioFamiliar = inject(ServicioFamiliarService)
   
   ngOnInit(): void {
-    this._servicioFamiliar.setHermanoMenor('Nico');
+    this._servicioFamiliar.setHermanoMenor('nico');
     this.nombre = this._servicioFamiliar.getHermanoMenor();
   }
 

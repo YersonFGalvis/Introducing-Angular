@@ -10,6 +10,10 @@ export class PadreComponent implements OnInit {
   nombre?: string;
   ValorContador:number = 0;
   mensajeRecibido: string = '';
+  fecha:Date = new Date();
+  dolar?:number = 3925.26;
+  pi?:number = Math.PI
+  factor?:number = 0.5;
 
 
   //Inyeccion por constructor
@@ -22,7 +26,7 @@ export class PadreComponent implements OnInit {
 
   
   ngOnInit(): void {
-    this._servicioFamiliar.setHermanoMayor('Kathe');
+    this._servicioFamiliar.setHermanoMayor('kathe');
     this.nombre = this._servicioFamiliar.getHermanoMayor();
   }
 

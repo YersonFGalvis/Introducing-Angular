@@ -1,0 +1,9 @@
+<h1>El mensaje recibido desde el padre es:</h1>
+<h3>{{recibeHijo}}</h3>
+
+
+<div>
+    <label for="entrada">Escribe un mensaje para el padre:</label>
+    <input type="text" id="entrada" [(ngModel)]="mensajeParaPadre">
+    <button type="button" (click)="enviarMensaje()">Enviar mensaje al padre</button>
+</div>
